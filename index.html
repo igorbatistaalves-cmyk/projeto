@@ -30,7 +30,15 @@ e curiosidades da área de tecnologia.</p
 <button>❤️<span>0</span></button>
 <button>👍<span>0</span></button>
 </div>
+function botaoClicado() {
+console.log("fui clicado");
+let texto = botao.querySelector("span");
 
-<img src="imagem-blog.png
-alt="Logotipo conceitual de tecnologia e educacao: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi-Fi, cins de azul e branco.">
-
+if (curtiu === false) {
+texto.textContent++;
+curtiu = true;
+} else {
+texto.textContent--;
+curtiu = false;
+}
+}
